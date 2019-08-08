@@ -1,0 +1,62 @@
+.full-block {
+  background: url('https://www.positronx.io/wp-content/uploads/2019/03/galaxy-background-2634-08.jpg') 0 0 no-repeat;
+  min-height: 300px;
+}
+
+.half-block {
+  background: url('https://www.positronx.io/wp-content/uploads/2019/03/galaxy-background-2634-04.jpg') 0 0 no-repeat;
+  min-height: 250px;
+  margin-bottom: 30px;
+}
+
+.half-second {
+  background: url('https://www.positronx.io/wp-content/uploads/2019/03/galaxy-background-2634-09.jpg') 0 0 no-repeat;
+  min-height: 250px;
+}
+
+.full-block,
+.half-block,
+.half-second {
+  background-size: cover;
+  position: relative;
+}
+
+.full-block:hover .overlay-block,
+.half-block:hover .overlay-block,
+.half-second:hover .overlay-block {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.overlay-block {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: purple;
+  overflow: hidden;
+}
+
+.full-block a,
+.half-block a,
+.half-second a {
+  color: #fff;
+}
+
+.full-block h3,
+.half-block h3,
+.half-second h3 {
+  padding: 15px 30px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .full-block,
+  .half-block,
+  .half-second {
+    margin-bottom: 20px;
+  }
+}
